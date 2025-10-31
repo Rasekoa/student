@@ -1,0 +1,129 @@
+/* General App Container */
+.app-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* App Header */
+.app-container h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 2rem;
+}
+
+/* Student Form */
+.student-form {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.student-form input {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.student-form input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+  outline: none;
+}
+
+.student-form button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.student-form button:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+/* Student Table */
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.student-table th,
+.student-table td {
+  padding: 0.8rem 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.student-table th {
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 600;
+}
+
+.student-table tbody tr:nth-child(even) {
+  background-color: #f1f5f9;
+}
+
+.student-table tbody tr:hover {
+  background-color: #e0f2fe;
+}
+
+.student-table button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  margin: 0 2px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.student-table button:hover {
+  transform: translateY(-1px);
+}
+
+/* Edit Button */
+.student-table button:nth-child(1) {
+  background-color: #facc15;
+  color: #1f2937;
+}
+
+.student-table button:nth-child(1):hover {
+  background-color: #eab308;
+}
+
+/* Delete Button */
+.student-table button:nth-child(2) {
+  background-color: #ef4444;
+  color: white;
+}
+
+.student-table button:nth-child(2):hover {
+  background-color: #b91c1c;
+}
+
+/* No Data Message */
+.student-table td[colspan="4"] {
+  padding: 1rem;
+  font-style: italic;
+  color: #6b7280;
+}
